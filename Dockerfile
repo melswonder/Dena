@@ -11,4 +11,4 @@ WORKDIR /app
 EXPOSE 8080
 
 # Run air
-CMD ["air"]
+CMD ["air", "--build.cmd", "go build -o ./tmp/main ./cmd/server"]
